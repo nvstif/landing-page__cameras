@@ -1,0 +1,17 @@
+@import url("../vendor/normalize.css");
+@import url("../vendor/fonts.css");
+
+@import "./modules/variant/variables/index";
+@import "./modules/variant/mixins/index";
+
+@import "./modules/blocks/page";
+@import "./modules/blocks/logo";
+@import "./modules/blocks/header";
+@import "./modules/blocks/form";
+@import "./modules/blocks/decor";
+@import "./modules/blocks/about";
+@import "./modules/blocks/cards";
+@import "./modules/blocks/card";
+@import "./modules/blocks/warranty";
+@import "./modules/blocks/support";
+@import "./modules/blocks/footer";

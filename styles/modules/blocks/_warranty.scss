@@ -1,0 +1,16 @@
+.warranty {
+  @include roboto;
+
+  &__title {
+    @include text-format($size: 32px, $line-height: 40px, $color: $secondaryColor);
+    margin: 0;
+    margin-bottom: 60px;
+    @include tablets {
+      @include text-format($size: 20px, $line-height: 30px, $color: $secondaryColor);
+    }
+    @include phones {
+      @include text-format($size: 12px, $line-height: 18px, $color: $secondaryColor);
+      margin-bottom: 40px;
+    }
+  }
+}

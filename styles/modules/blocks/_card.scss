@@ -1,0 +1,97 @@
+.card {
+  @include roboto;
+  box-sizing: border-box;
+  background-color: $secondaryColorTint4;
+
+  &_size {
+    &_large {
+      max-width: 550px;
+      min-height: 364px;
+      padding: 40px;
+      border-radius: 16px;
+      @include tablets {
+        min-width: 100%;
+      }
+      @include phones {
+        padding: 20px;
+        min-height: 282px;
+      }
+    }
+
+    &_small {
+      max-width: 265px;
+      min-height: 153px;
+      padding: 20px;
+      border-radius: 8px;
+      @include laptop {
+        max-width: 314px;
+      }
+      @include phones {
+        padding: 20px;
+        min-height: 148px;
+      }
+    }
+  }
+
+  &__type {
+    display: block;
+    margin-bottom: 20px;
+    @include text-format($size: 18px, $color: $secondaryColorTint2);
+    @include phones {
+      margin-bottom: 10px;
+    }
+
+    &_size {
+      &_small {
+        font-weight: 500;
+        color: #eaeaf0;
+        margin-bottom: 38px;
+        @include phones {
+          margin-bottom: 36px;
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    @include text-format($size: 32px, $color: $secondaryColor);
+    @include phones {
+      margin-bottom: 28px;
+      @include text-format($size: 24px, $line-height: 32px, $color: $secondaryColor);
+    }
+  }
+
+  &__info {
+    margin: 0;
+    margin-bottom: 37px;
+    @include text-format($size: 32px, $line-height: 40px, $color: $secondaryColorTint2);
+    @include phones {
+      margin-bottom: 100px;
+      @include text-format($size: 12px, $line-height: 18px, $color: $secondaryColorTint2);
+    }
+    &_size {
+      &_small {
+        margin: 0;
+        @include text-format($size: 15px, $line-height: 19px, $color: $secondaryColorTint2);
+        @include phones {
+          @include text-format($size: 12px, $line-height: 18px, $color: $secondaryColorTint2);
+        }
+      }
+    }
+  }
+
+  &__price {
+    @include text-format($size: 14px, $color: $decorativeColorSecond);
+    @include phones {
+      @include text-format($size: 12px, $line-height: 18px, $color: $decorativeColorSecond);
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: #232327;
+    transition: ease-in-out 0.3s background-color;
+  }
+}

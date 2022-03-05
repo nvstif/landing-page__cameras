@@ -1,0 +1,48 @@
+.footer {
+  @include roboto;
+  position: relative;
+
+  &__logo {
+    margin-bottom: 84px;
+    @include phones {
+      margin-bottom: 184px;
+    }
+  }
+
+  &__labels {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    @include tablets {
+      margin-top: 15px;
+      flex-direction: column;
+      gap: 60px;
+      .form__label {
+        margin: 0;
+      }
+    }
+    @include phones {
+      margin: 0;
+      gap: 40px;
+    }
+  }
+
+  &__copyright {
+    display: inline-block;
+    @include text-format($size: 12px, $line-height: 18px, $color: $secondaryColorTint3);
+  }
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 60px;
+  border-top: 2px solid #151515;
+  width: calc(100% - 60px * 2);
+
+  @include phones {
+    left: 20px;
+    width: calc(100% - 20px * 2);
+  }
+}
