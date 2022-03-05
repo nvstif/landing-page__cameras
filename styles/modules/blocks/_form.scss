@@ -1,0 +1,82 @@
+.form {
+  @include roboto;
+
+  &__container {
+    display: flex;
+    margin-bottom: 12px;
+    @include tablets {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__item {
+    @include text-format($size: 14px, $line-height: 24px, $color: $secondaryColor);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 16px;
+    max-width: 348px;
+    width: 100%;
+    min-height: 50px;
+    background-color: rgba(142, 142, 152, 0.2);
+    border: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: $secondaryColor;
+
+    @include tablets {
+      max-width: 427px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(142, 142, 152, 0.3);
+      transition: 0.3s ease-in-out background-color;
+    }
+
+    &:focus {
+      outline: none;
+    }
+    &_footer {
+      @include tablets {
+        max-width: 348px;
+        width: 100%;
+      }
+    }
+  }
+
+  &__btn-text {
+    @include text-format($size: 14px, $line-height: 24px, $color: $secondaryColor);
+    letter-spacing: 0.375px;
+    @include phones {
+      display: none;
+    }
+  }
+
+  &__button {
+    margin: 0;
+    padding: 0 16px;
+    border: 0;
+    max-width: 221px;
+    width: 100%;
+    height: 50px;
+    background-color: $secondaryColorTint3;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+    @include phones {
+      width: 51px;
+    }
+    &:hover {
+      background-color: #363636;
+      transition: 0.3s ease-in-out background-color;
+    }
+  }
+
+  &__label {
+    @include text-format($size: 12px, $line-height: 18px, $color: $secondaryColorTint3);
+    margin-left: 10px;
+    @include phones {
+      margin-left: 2px;
+    }
+  }
+}

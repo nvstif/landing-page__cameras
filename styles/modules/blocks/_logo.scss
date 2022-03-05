@@ -1,0 +1,21 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    @include text-format($size: 22px, $line-height: 30px, $color: $secondaryColor);
+    margin-right: 20px;
+    @include phones {
+      @include text-format($size: 20px, $line-height: 28px, $color: $secondaryColor);
+      margin-right: 16px;
+    }
+  }
+
+  &__status {
+    @include text-format($size: 12px, $color: $primaryColor);
+    background-color: $decorativeColorSecond;
+    border-radius: 4px;
+    padding: 4px 8px;
+    text-align: center;
+  }
+}

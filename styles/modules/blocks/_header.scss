@@ -1,0 +1,48 @@
+.header {
+  @include roboto;
+
+  &__logo {
+    margin-left: 6px;
+    margin-bottom: 60px;
+    @include tablets {
+      margin-left: 0;
+      margin-bottom: 70px;
+    }
+    @include phones {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__title {
+    @include text-format($size: 112px, $line-height: 112px, $color: $secondaryColor);
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 20px;
+
+    @include tablets {
+      @include text-format($size: 70px, $line-height: 90px, $color: $secondaryColor);
+      margin: 0;
+    }
+
+    @include phones {
+      @include text-format($size: 50px, $line-height: 60px, $color: $secondaryColor);
+      margin-bottom: 10px;
+    }
+  }
+
+  &__subtitle {
+    @include text-format($size: 80px, $line-height: 70px, $color: $secondaryColor);
+    margin: 0;
+    margin-bottom: 230px;
+
+    @include tablets {
+      @include text-format($size: 50px, $line-height: 60px, $color: $secondaryColor);
+      margin-bottom: 470px;
+    }
+
+    @include phones {
+      @include text-format($size: 30px, $line-height: 38px, $color: $secondaryColor);
+      margin-bottom: 260px;
+    }
+  }
+}

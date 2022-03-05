@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ремонт плёночных фотоаппаратов">
+  <meta name="keywords" content="ремонт фотоаппарат гарантия">
+  <meta name="author" content="Никита Стифеев">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>C-Works</title>
+</head>
+
+<body class="page">
+  <div class="page__container">
+
+    <header class="header page__header">
+      <div class="logo header__logo">
+        <span class="logo__text">C-Works</span>
+        <span class="logo__status">мы открылись</span>
+      </div>
+      <h1 class="header__title">Ремонт</h1>
+      <h2 class="header__subtitle">Плёночных фотоаппаратов</h2>
+      <form class="form" method="POST" action="https://jsonplaceholder.typicode.com/posts">
+        <div class="form__container">
+          <input type="email" class="form__item" id="email-header" name="email" required>
+          <button type="submit" class="form__button">
+            <span class="form__btn-text">Отремонтируйте камеру</span>
+            <span class="form__btn-emoji">&#9996;</span>
+          </button>
+        </div>
+        <label class="form__label">Напишите нам и мы свяжемся с вами.</label>
+      </form>
+    </header>
+
+    <main class="main">
+      <section class="decor page__decor">
+        <div class="decor__row">
+          <img class="decor__photo decor__photo_size_small" src="./images/photo-1.png" alt="фото-зум">
+          <div class="decor__item decor__item_size_small"></div>
+        </div>
+        <div class="decor__row">
+          <div class="decor__item decor__item_size_large"></div>
+          <img class="decor__photo decor__photo_size_large" src="./images/photo-2.png" alt="фотоаппарат">
+        </div>
+      </section>
+
+      <section class="about page__about">
+        <p class="about__info">
+          Мы&nbsp;ремонтируем плёночные фотоаппараты. Полностью механические камеры,&nbsp; относительно современные
+          камеры
+          на&nbsp;электронике, проводим CLA камер, принимаем в&nbsp;зачёт оплаты сломаные тушки
+          и&nbsp;объективы.
+        </p>
+        <h3 class="about__out-principle">
+          Для энтузиастов, от энтузиастов &#128072;
+        </h3>
+      </section>
+
+      <section class="cards page__cards">
+        <div class="card card_size_large">
+          <span class="card__type">CLA</span>
+          <h4 class="card__title">Чистка камер.</h4>
+          <p class="card__info">Замена уплотнителей, дампфера зеркала, смазка механизмов, юстировка.</p>
+          <span class="card__price">от 2000₽</span>
+        </div>
+        <div class="card card_size_large">
+          <span class="card__type">Ремонт</span>
+          <h4 class="card__title">Ремонт камер.</h4>
+          <p class="card__info">Ремонт механизмов, замена деталей, пайка электроники, адаптация питания.</p>
+          <span class="card__price">от 2500₽</span>
+        </div>
+      </section>
+
+      <section class="warranty page__warranty">
+        <h3 class="warranty__title">Полная гарантия &#9889;</h3>
+        <div class="cards">
+          <div class="card card_size_small">
+            <span class="card__type card__type_size_small">CLA</span>
+            <p class="card__info card__info_size_small">После CLA мы даем гарантию на 1 год, в случае беды мы заново
+              обслужим вашу камеру.</p>
+          </div>
+          <div class="card card_size_small">
+            <span class="card__type card__type_size_small">Ремонт</span>
+            <p class="card__info card__info_size_small">После ремонта мы даем гарантию на 3 месяца или 6 месяцев.</p>
+          </div>
+          <div class="card card_size_small">
+            <span class="card__type card__type_size_small">Пайка и адаптация</span>
+            <p class="card__info card__info_size_small">После пайки и адаптации питания мы даем гарантию на 1 год.</p>
+          </div>
+          <div class="card card_size_small">
+            <span class="card__type card__type_size_small">Осмотр</span>
+            <p class="card__info card__info_size_small">Осмотр камеры — бесплатен, если мы что-то сломаем, поменяем
+              деталь сами.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="support page__support">
+        <h3 class="support__title">Поддержите нас &#129309;</h3>
+        <button class="support__button">Напишите нам если хотите помочь!</button>
+        <p class="support__text">Ещё вы сможете безвозмездно поддержать нас на Patreon, пока мы ещё создали аккаунт, но
+          как только это сделаем, сообщим вам.</p>
+      </section>
+    </main>
+
+    <footer class="footer page__footer">
+      <div class="logo footer__logo">
+        <span class="logo__text">C-Works</span>
+        <span class="logo__status">мы открылись</span>
+      </div>
+      <form class="form" method="POST" action="https://jsonplaceholder.typicode.com/posts">
+        <div class="form__container">
+          <input type="email" class="form__item form__item_footer" id="email-footer" name="email" required>
+          <button type="submit" class="form__button">
+            <span class="form__btn-text">Отремонтируйте камеру</span>
+            <span class="form__btn-emoji">&#9996;</span>
+          </button>
+        </div>
+        <div class="footer__labels">
+          <label class="form__label">Напишите нам и мы свяжемся с вами.</label>
+          <span class="footer__copyright">&copy; C-Works, 2022.</span>
+        </div>
+      </form>
+    </footer>
+
+  </div>
+
+  <script src="./script/script.js"></script>
+
+</body>
+
+</html>

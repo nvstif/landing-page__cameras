@@ -1,0 +1,30 @@
+.about {
+  @include roboto;
+
+  &__info {
+    @include text-format($size: 32px, $line-height: 40px, $color: $secondaryColorTint2);
+    margin: 0;
+    margin-bottom: 60px;
+    @include tablets {
+      @include text-format($size: 20px, $line-height: 30px, $color: $secondaryColorTint2);
+    }
+
+    @include phones-small {
+      @include text-format($size: 12px, $line-height: 18px, $color: $secondaryColorTint2);
+      margin-bottom: 20px;
+    }
+  }
+
+  &__out-principle {
+    margin: 0;
+    @include text-format($size: 32px, $line-height: 40px, $color: $secondaryColor);
+
+    @include tablets {
+      @include text-format($size: 20px, $line-height: 30px, $color: $secondaryColor);
+    }
+
+    @include phones-small {
+      @include text-format($size: 12px, $line-height: 18px, $color: $secondaryColor);
+    }
+  }
+}

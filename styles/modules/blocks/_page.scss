@@ -1,0 +1,86 @@
+.page {
+  background-color: $primaryColor;
+
+  &__container {
+    min-width: $phones-small;
+    max-width: $desktop;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 0;
+    @include phones {
+      padding: 24px 0;
+    }
+  }
+
+  &__header {
+    max-width: calc($desktop - 160px * 2);
+    margin: 0 auto;
+    padding: 0 60px 60px;
+
+    @include tablets {
+      padding: 0 60px 32px;
+    }
+
+    @include phones {
+      padding: 0 20px 20px;
+    }
+  }
+
+  &__decor {
+    padding: 60px 30px;
+
+    @include tablets {
+      padding: 20px 60px 60px;
+    }
+
+    @include phones {
+      padding: 20px;
+    }
+  }
+
+  &__about {
+    max-width: calc($desktop - 160px * 2);
+    margin: 0 auto;
+    padding: 60px 60px;
+    @include phones {
+      padding: 40px 20px 30px;
+    }
+  }
+
+  &__cards {
+    max-width: calc($desktop - 160px * 2);
+    margin: 0 auto;
+    padding: 60px 60px;
+    @include phones {
+      padding: 40px 20px 30px;
+    }
+  }
+
+  &__warranty {
+    max-width: calc($desktop - 160px * 2);
+    margin: 0 auto;
+    padding: 60px 60px;
+    @include phones {
+      padding: 40px 20px 30px;
+    }
+  }
+
+  &__support {
+    max-width: calc($desktop - 160px * 2);
+    margin: 0 auto;
+    padding: 60px 60px 0;
+    @include phones {
+      padding: 40px 20px 0;
+    }
+  }
+
+  &__footer {
+    max-width: calc($desktop - 160px * 2);
+    margin: 0 auto;
+    padding: 60px 60px 0;
+
+    @include phones {
+      padding: 30px 20px 0;
+    }
+  }
+}
